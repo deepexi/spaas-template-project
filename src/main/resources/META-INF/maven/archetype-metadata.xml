@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor name="optimus-archetype-sc">
+    <requiredProperties>
+        <requiredProperty key="appName">
+            <defaultValue>Helloworld</defaultValue>
+        </requiredProperty>
+    </requiredProperties>
+
+    <fileSets>
+          <fileSet filtered="true" encoding="UTF-8">
+              <directory/>
+              <includes>
+                  <include>Dockerfile</include>
+                  <include>start-code.sh</include>
+                  <include>build.sh</include>
+                  <include>.gitignore</include>
+                  <include>README.md</include>
+              </includes>
+          </fileSet>
+          <fileSet filtered="true" encoding="UTF-8">
+              <directory>swagger</directory>
+              <includes>
+                  <include>config.json</include>
+                  <include>import.sh</include>
+              </includes>
+          </fileSet>
+      </fileSets>
+  <modules>
+        <module id="${rootArtifactId}-webapp-provider" dir="__rootArtifactId__-webapp-provider" name="${rootArtifactId}">
+            <fileSets>
+                <fileSet filtered="true" packaged="true" encoding="UTF-8">
+                    <directory>src/main/java</directory>
+                </fileSet>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory>src/main/resources</directory>
+                </fileSet>
+                <fileSet filtered="true" packaged="true" encoding="UTF-8">
+                    <directory>src/test/java</directory>
+                </fileSet>
+                <fileSet encoding="UTF-8">
+                    <directory>src/test/resources</directory>
+                </fileSet>
+            </fileSets>
+        </module>
+    </modules>
+
+</archetype-descriptor>
