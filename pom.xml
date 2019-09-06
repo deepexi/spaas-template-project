@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.deepexi</groupId>
     <artifactId>spaas-template-project</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>maven-archetype</packaging>
 
     <name>spaas-template-project</name>
@@ -124,6 +124,18 @@
 			<id>oss</id>
 			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
 		</repository>
+		<!-- deepexi repository
+		<snapshotRepository>
+            <id>depick</id>
+            <name>User Project SNAPSHOTS</name>
+            <url>http://nexus.deepexi.top/repository/maven-snapshots/</url>
+        </snapshotRepository>
+		<repository>
+            <id>depick</id>
+            <name>User Project Release</name>
+            <url>http://nexus.deepexi.top/repository/maven-releases/</url>
+        </repository>
+		-->
 	</distributionManagement>
 
 </project>
