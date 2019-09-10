@@ -3,4 +3,4 @@ FROM fabric8/java-jboss-openjdk8-jdk
 
 USER root
 
-COPY ${rootArtifactId}-webapp-provider/target/demo.jar /home/
+COPY ${rootArtifactId}-webapp/target/demo.jar /home/

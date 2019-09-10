@@ -14,7 +14,7 @@ docker run --rm \
    -v $proj_home:/usr/src/mymaven \
    -w /usr/src/mymaven $img_mvn mvn clean package -U
 
-sudo mv $proj_home/${rootArtifactId}-webapp-provider/target/${rootArtifactId}-*.jar $proj_home/${rootArtifactId}-webapp-provider/target/demo.jar # 兼容所有sh脚本
+sudo mv $proj_home/${rootArtifactId}-webapp/target/${rootArtifactId}-*.jar $proj_home/${rootArtifactId}-webapp/target/demo.jar # 兼容所有sh脚本
 docker build -t $img_output .
 
 mkdir -p $PWD/logs

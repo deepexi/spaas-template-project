@@ -26,7 +26,7 @@
           </fileSet>
       </fileSets>
   <modules>
-        <module id="${rootArtifactId}-webapp-provider" dir="__rootArtifactId__-webapp-provider" name="${rootArtifactId}">
+        <module id="${rootArtifactId}-webapp" dir="__rootArtifactId__-webapp" name="${rootArtifactId}">
             <fileSets>
                 <fileSet filtered="true" packaged="true" encoding="UTF-8">
                     <directory>src/main/java</directory>
